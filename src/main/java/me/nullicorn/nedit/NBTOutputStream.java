@@ -225,9 +225,7 @@ public class NBTOutputStream extends DataOutputStream {
         }
 
         writeInt(bytes.length);
-        for (Byte item : bytes) {
-            writeByte(item);
-        }
+        write(bytes);
     }
 
     /**
